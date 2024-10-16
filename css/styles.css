@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
 
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+	margin-inline: 0;
+  padding: 0;
+	padding-inline: 0;
+}
+
+.title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.body-text {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.tag {
+    font-size: 10px;
+    font-size: 0.625rem;
+    font-weight: 500;
+}
+
 body {
 	display: flex;
 	justify-content: center;
@@ -15,6 +47,7 @@ body {
 	background-color: white;
 	border-radius: 15px;
 	overflow: hidden;
+	padding: 16px 16px 20px;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -22,36 +55,36 @@ body {
 	height: 152px;
 	width: 100%;
 	object-fit: cover;
-}
-
-.card-content {
-	padding: 6px 16px;
+	border-radius: 15px;
 }
 
 .chip {
 	display: inline-block;
 	background-color: #E6D6FF;
 	color: #883AE1;
-	padding: 6px 12px;
-	border-radius: 12px;
-	font-size: 12px;
+	padding: 6px 16px;
+	border-radius: 20px;
+	margin: 16px 0
 }
 
-h2 {
-	margin-bottom: 16px;
-	font-size: 18px;
+h1 {
+	margin-bottom: 6px;
 }
 
 p {
 	color: #6C727F;
-	font-size: 14px;
-	line-height: 1.5;
-	margin-bottom: 16px;
+}
+
+.description {
+	margin-bottom: 20px;
 }
 
 .author {
-	font-weight: 500;
 	color: #6C727F;
+	height: 35px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
 }
 
 @media screen and (max-width: 640px) {
